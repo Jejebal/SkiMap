@@ -2,7 +2,7 @@
 /**
  * Project      : SkiMap
  * Description  : Un site web permettant de vérifier les station de ski Suisse.
- * File         : backend/php/function/constantes.php
+ * File         : backend/php/function/fonctions.php
  * Authors      : Jérémy Ballanfat
  * Date         : 2 Février 2024
  */
@@ -11,9 +11,9 @@ require_once("constantes.php");
 
 /**
  * 
- * Permet de créez le lien entre la base de données et l'api si cela n'a pas déjà été éffectuez.
+ * Permet de créez le lien entre la base de données et l'api si cela n'a pas déjà été effectuez.
  * 
- * @return PDO Le liens utilisez pour éffctuez toute les commande.
+ * @return PDO Le liens utilisez pour effectuez toute les commande.
  * 
  */
 function connexionBDD() : PDO {

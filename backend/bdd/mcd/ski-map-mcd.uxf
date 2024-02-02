@@ -1,0 +1,18 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>530</x><y>400</y><w>100</w><h>40</h></coordinates><panel_attributes>Station
+--
+nom_station</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>530</x><y>270</y><w>100</w><h>40</h></coordinates><panel_attributes>Domaine
+--
+nom_domaine</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>780</x><y>390</y><w>100</w><h>60</h></coordinates><panel_attributes>Point
+--
+latitude
+longitude</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>660</x><y>530</y><w>100</w><h>70</h></coordinates><panel_attributes>Utilisateur
+--
+pseudo
+mot-passe
+admin</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>620</x><y>400</y><w>180</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=1..*
+m2=1..1
+&lt; constitue</panel_attributes><additional_attributes>160;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>300</y><w>100</w><h>120</h></coordinates><panel_attributes>lt=-
+m1=1..*
+m2=1..1
+appartient ^</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element></diagram>
