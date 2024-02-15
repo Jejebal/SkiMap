@@ -41,6 +41,15 @@ class Point extends BaseModel{
          
     }
 
+    /**
+     * 
+     * Cette fonction permet de récupérez toutes les points liez à un domaine.
+     * 
+     * @param int $id L'identifiant du domaine
+     * 
+     * @return array|false Retourne une list de station si la requête sql passe sans problème.
+     * 
+     */
     public static function getAllPointByStation(int $id) : array | false{
 
         $query = "SELECT * FROM `points`

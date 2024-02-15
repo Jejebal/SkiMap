@@ -73,7 +73,7 @@ class Utilisateur extends BaseModel {
      * 
      * @param string $pseudo Le pseudo du user à cherchez.
      * @param string $password Le mot de passe a vérifié avec le hash dans la base de données.
-     * @return Utilisateur|null Retourne le user si toute les étape sont valider ou false si une seul ne l'est pas.
+     * @return Utilisateur|null Retourne l'utilisateur si toute les étape sont valider ou false si une seul ne l'est pas.
      * 
      */
     public static function selectByLogin(string $pseudo, string $motPasse) : Utilisateur | false{
@@ -96,6 +96,15 @@ class Utilisateur extends BaseModel {
 
     }
 
+    /**
+     * 
+     * Permet de récupérez un utilisateur si le pseudo données existe.
+     * 
+     * @param string $pseudo Le pseudo a vérifier.
+     * 
+     * @return Utilisateur|false Retourne un utilisateur si le pseudo existe et false si la requête sql échoue.
+     * 
+     */
     public static function pseudoExist(string $pseudo) : Utilisateur | false{
 
         $query = "SELECT * 
@@ -136,28 +145,22 @@ class Utilisateur extends BaseModel {
 
     }
 
+    /**
+     * 
+     * Permet d'enregistrez un utilisateur dans la session.
+     * 
+     */
     public static function saveLogin(Utilisateur $user): void{
 
         $_SESSION["user"] = $user;
 
     }
 
-    public static function clearLogin() : void{
-
-        $_SESSION["user"] = array();
-
-        if (ini_get("session.use_cookies")) {
-            $params = session_get_cookie_params();
-            setcookie(session_name(), '', time() - 42000,
-                $params["path"], $params["domain"],
-                $params["secure"], $params["httponly"]
-            );
-        }
-
-        session_destroy();
-
-    }
-
+    /**
+     * 
+     * Permet de savoir si un utilisateur est connectez ou non.
+     * 
+     */
     public static function isConnected() : bool{
 
         if(isset($_SESSION["user"])){

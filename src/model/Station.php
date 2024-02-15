@@ -21,12 +21,16 @@ class Station extends BaseModel{
         "id_domaine" => "idDomaine"
     ];
  
+    /** Identifiant d'une station */
     public int $idStation;
  
+    /** Le nom caractérisant une station  */
     public string $nomStation;
 
+    /** L'identifiant du domaine lier à une station  */
     public int $idDomaine;
 
+    /** Une list des points délimitant une station  */
     public array $points;
  
     public function __construct(array $init = [])
@@ -39,6 +43,15 @@ class Station extends BaseModel{
          
     }
 
+    /**
+     * 
+     * Cette fonction permet de récupérez toutes les stations liez à une station.
+     * 
+     * @param int $id L'identifiant de la station
+     * 
+     * @return array|false Retourne une list de point si la requête sql passe sans problème.
+     * 
+     */
     public static function getAllStationByDomaine(int $id) : array | false{
 
         $query = "SELECT * FROM `stations`

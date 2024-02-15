@@ -19,7 +19,7 @@ class LoginCtrl {
 
     /**
      * 
-     * Cette fonction permet d'afficher la view Subscribe pour la création d'un compte.
+     * Cette fonction permet d'afficher la view inscrire pour la création d'un compte.
      * 
      */
     public function inscriptionShow(Request $request, Response $response){
@@ -44,6 +44,11 @@ class LoginCtrl {
 
     }
 
+    /**
+     * 
+     * Cette fonction permet de vérifiez si l'utilisateur qui veut être créez est valide.
+     * 
+     */
     public function inscriptionCreate(Request $request, Response $response){
 
         $main = new MainCtrl();
@@ -93,6 +98,11 @@ class LoginCtrl {
 
     }
 
+    /**
+     * 
+     * Cette fonction permet d'afficher la view login pour la connection à un compte.
+     * 
+     */
     public function loginShow(Request $request, Response $response){
 
         session_start();
@@ -115,6 +125,11 @@ class LoginCtrl {
 
     }
 
+    /**
+     * 
+     * Cette fonction permet de vérifiez si l'utilisateur qui veut se connectez existe.
+     * 
+     */
     public function loginCheck(Request $request, Response $response){
 
         session_start();

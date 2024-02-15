@@ -20,10 +20,13 @@ class Domaine extends BaseModel{
         "nom_domaine" => "nomDomaine"
     ];
 
+    /** Identifiant d'un domaine */
     public int $idDomaine;
 
+    /** Le nom caractérisant un domaine  */
     public string $nomDomaine;
 
+    /** Une list des stations contenue dans un domaine  */
     public array $stations;
 
     public function __construct(array $init = [])
@@ -36,6 +39,13 @@ class Domaine extends BaseModel{
         
     }
 
+    /**
+     * 
+     * Cette fonction permet de récupérez touts les domaines de la base de données.
+     * 
+     * @return array|false Retourne une list de domaine si la requête sql passe sans problème.
+     * 
+     */
     public static function getAllDomaine() : array | false{
 
         $query = "SELECT * FROM `domaines`;";
