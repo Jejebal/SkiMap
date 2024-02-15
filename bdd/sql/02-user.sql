@@ -1,6 +1,6 @@
 -- Project      : SkiMap
 -- Description  : Un site web permettant de vérifier les station de ski Suisse.
--- File         : 02-user.sql
+-- File         : backend/sql/02-user.sql
 -- Authors      : Jérémy Ballanfat
 -- Date         : 2 Février 2024
 

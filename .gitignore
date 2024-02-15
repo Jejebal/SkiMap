@@ -1,0 +1,5 @@
+# Ignorer les librairies importées
+/vendor/
+
+# Ignorer les constante de la base de données
+/src/secret.php

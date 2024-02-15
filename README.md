@@ -42,12 +42,52 @@ Utilisateur (<u>id_utilisateur</u>, pseudo, mot_passe)
 
 - Accomplit : Création de la base de données exceptez les jeux de données et affichage de la carte Leaflet.
 
-- Difficulté : Aucun.
+- Difficulté : Aucun
 
 ## 09.02.2024 P1
 
+- Accomplit : Les fonction pour récupérez les données de la base de données on été faite avec le commencement de la récupération des données.
+
+- Difficulté : Aucun
+
 ## 09.02.2024 P2
+
+- Accomplit : Récupération effectuez des données effectuez dans le backend.
+
+- Difficulté : Aucune
 
 ## 09.02.2024 P3
 
+- Accomplit : Rien
+
+- Difficulté : En cours de vérification des données
+
 ## 09.02.2024 P4
+
+- Accomplit : Rien
+
+- Difficulté : En cours de vérification des données
+
+## 10.02.2024
+
+- Accomplit : Changement de style d'application en slim a l'aide de composer.
+
+- Difficulté : Problème avec la récupération des données depuis le js et trop peut de temps restant pour y remédiez.
+
+## 12.02.2024
+
+- Accomplit : Arborescence complète effectuez avec l'hôte virtuelle et les model de base et controller (BaseModel.php, Database.php, MainCtrl.php). 
+
+- Difficulté : Aucune
+
+## 14.02.2024
+
+- Accomplit : Model domaine, station et point effectuez en plus du controller map pour affichez la carte avec les point des stations.
+
+- Difficulté : Récupérez a l'aide du js les données récupérer de la base de données dans le php.
+
+## 15.02.2024
+
+- Accomplit : Création d'une page de login et de connexion.
+
+- Difficulté : Aucune
